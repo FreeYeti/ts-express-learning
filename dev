@@ -1,0 +1,18 @@
+#!/bin/bash
+while [ "$1" != "" ]
+do
+    case "$1" in
+        backend)
+            mkdir -p ./tmp/{db,data,cache,logs}
+            docker-compose -f docker/docker-compose.dev.yml run -p 3000:3000 backend bash
+            ;;
+        down)
+            docker-compose -f docker/docker-compose.dev.yml down
+            ;;
+        -h | --help)
+            echo $"Usage: $0 {backend|down}"
+            exit 1
+            ;;
+    esac
+    shift
+done

@@ -15,6 +15,7 @@ Following commands only allow in a dev-container
 ### Accessing
 
 * pgAdmin4: [http://localhost:8001/](http://localhost:8001/) (email and password: p@g.sql/postgres, database password: postgres)
+* development server: [http://localhost:3000](http://localhost:3000)
 
 ### To recycle developing resources
 

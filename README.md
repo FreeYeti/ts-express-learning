@@ -24,3 +24,8 @@ Following commands only allow in a dev-container
 
 * `./dev down`: To remove development containers, but all data will be persisted.
 * Remove the project directry to release storage.
+
+
+## Reference
+
+* https://tsh.io/blog/reduce-node-modules-for-better-performance/

@@ -9,8 +9,14 @@ do
         down)
             docker-compose -f docker/docker-compose.dev.yml down
             ;;
+        build)
+            cp ./docker/.dockerignore ./
+            cp ./docker/Dockerfile ./
+            docker build -t ts-backend:latest .
+            rm ./.dockerignore ./Dockerfile
+            ;;
         -h | --help)
-            echo $"Usage: $0 {backend|down}"
+            echo $"Usage: $0 {backend|down|build}"
             exit 1
             ;;
     esac

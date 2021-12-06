@@ -10,7 +10,10 @@
 
 Following commands only allow in a dev-container
 
-
+* `yarn test`: To run a test
+* `yarn start`: To start a express server
+* `yarn build`: To build the project to the dir of `build`
+* `yarn start-staging`: To start a staging server
 
 ### Accessing
 

@@ -1,11 +1,11 @@
-import type { Config } from "@jest/types";
+import type { Config } from '@jest/types';
 
 // Sync object
 const config: Config.InitialOptions = {
   verbose: true,
-  moduleFileExtensions: ["js", "json", "ts"],
+  moduleFileExtensions: ['js', 'json', 'ts'],
   transform: {
-    "^.+\\.ts?$": "ts-jest",
+    '^.+\\.ts?$': 'ts-jest',
   },
 };
 

@@ -15,6 +15,8 @@ Following commands only allow in a dev-container
 * `yarn build`: To build the project to the dir of `build`
 * `yarn start-staging`: To start a staging server
 
+Caveat About VScode with PNP: run `yarn dlx @yarnpkg/sdks vscode` when added new dependencies
+
 ### Accessing
 
 * pgAdmin4: [http://localhost:8001/](http://localhost:8001/) (email and password: p@g.sql/postgres, database password: postgres)

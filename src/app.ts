@@ -1,11 +1,18 @@
 import express, { Application } from 'express';
+import compression from 'compression';
 
+// Routers
+import membersApi from './routers/members';
+
+// Express app
 const app: Application = express();
 
-app.get('/ping', async (_req, res) => {
-  res.send({
-    message: 'pong',
-  });
-});
+// Common middlewares
+app.use(compression());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Applying routers
+app.use('/api/v1/members/', membersApi);
 
 export default app;
